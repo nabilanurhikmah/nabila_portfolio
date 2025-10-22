@@ -433,3 +433,280 @@ footer {
     padding: 100px 0;
 }
 
+/* ======== RESPONSIVE DESIGN ======== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  header {
+    padding: 15px 40px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 40px;
+  }
+
+  .home-text {
+    max-width: 100%;
+  }
+
+  .home-img img {
+    width: 250px;
+    margin-top: 30px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 250px;
+  }
+
+  .services, .pengalaman, .pendidikan, .biodata, .contact {
+    padding: 80px 40px;
+  }
+
+  .service-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-box {
+    width: 90%;
+  }
+}
+
+/* HP kecil */
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .home h1 {
+    font-size: 28px;
+  }
+
+  .home-img img {
+    width: 200px;
+  }
+
+  .about h2 {
+    font-size: 26px;
+  }
+
+  .about p {
+    font-size: 15px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .biodata-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .biodata-container p {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+
+/* ===== SERTIFIKAT SECTION ===== */
+.sertifikat {
+  background-color: #ffcce0;
+  padding: 100px 0;
+}
+
+.sertifikat .section-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.sertifikat-card {
+  background-color: #fff;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.sertifikat-card:hover {
+  transform: translateY(-5px);
+}
+
+.sertifikat .card-body {
+  padding: 30px;
+}
+
+.btn-sertifikat {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #c2185b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-sertifikat:hover {
+  background-color: #ad1457;
+  color: #fff;
+}
+/* ===== RESPONSIVE SETTINGS ===== */
+
+/* Tombol menu muncul di HP */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: #d12b79;
+  cursor: pointer;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Untuk layar max 992px (tablet & HP besar) */
+@media (max-width: 992px) {
+  header {
+    padding: 15px 40px;
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 30px;
+  }
+
+  .home-text {
+    max-width: 100%;
+  }
+
+  .home-img img {
+    width: 250px;
+    margin-top: 30px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 250px;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .service-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pengalaman,
+  .pendidikan,
+  .services,
+  .about {
+    padding: 80px 40px;
+  }
+
+  .biodata-container {
+    width: 90%;
+  }
+}
+
+/* Untuk layar kecil (max 768px) */
+@media (max-width: 768px) {
+  /* Navbar jadi dropdown */
+  nav ul {
+    flex-direction: column;
+    background-color: #f8a6c2;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 220px;
+    display: none;
+    border-radius: 10px;
+    padding: 15px 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Pastikan konten tidak menempel */
+  section {
+    padding: 60px 20px;
+  }
+
+  h1, h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .service-box {
+    width: 90%;
+  }
+}
+
+/* Untuk layar sangat kecil (max 480px) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .home h1 {
+    font-size: 28px;
+  }
+
+  .about-img img {
+    width: 200px;
+  }
+
+  .home-img img {
+    width: 200px;
+  }
+
+  .pengalaman, .pendidikan {
+    padding: 60px 20px;
+  }
+}
