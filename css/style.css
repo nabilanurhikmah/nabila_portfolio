@@ -375,3 +375,61 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+/* ====== SERTIFIKAT SECTION ====== */
+.sertifikat {
+    min-height: 100vh;
+    padding: 120px 80px 80px;
+    background-color: #ffc9dd; /* pink lembut agar serasi */
+    text-align: center;
+}
+
+.sertifikat h2 {
+    font-size: 36px;
+    color: #d12b79;
+    margin-bottom: 40px;
+}
+
+.sertifikat .card {
+    background: #fff;
+    border: none;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sertifikat .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.sertifikat .card h5 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.sertifikat .btn {
+    background-color: #d12b79;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.sertifikat .btn:hover {
+    background-color: #a11d5c;
+    transform: scale(1.05);
+}
+
+/* ====== WARNA LATAR BELAKANG SECTION SERTIFIKAT ====== */
+#certificates {
+    background-color: #ffd4e2 !important; /* Biar sama kayak section lain */
+    padding: 100px 0;
+}
+
